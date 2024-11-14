@@ -51,3 +51,40 @@
 
 ## Viewing Command History
 - `history`
+
+## Directory Operations
+- **Create Directory**: `mkdir github`
+- **Change Directory**: `cd github/`
+
+## Cloning Repositories
+- **Clone Repository**: `git clone https://github.com/Safiakhatoon767/git_for_devops.git`
+
+## File Editing and Staging
+- **Edit File**: `vim README.md`
+- **Add File to Staging Area**: `git add README.md`
+
+## Committing Changes
+- **Commit Changes with Message**: `git commit -m "your message"`
+
+## Remote Repository Management
+- **Set Remote URL**: `git remote set-url origin <your_new_url>`
+- **View Remote URLs**: `git remote -v`
+- **Remove Remote**: `git remote remove origin`
+- **Add New Remote**: `git remote add origin <repository_url>`
+
+## Pushing Changes
+- **Push Changes to Remote**: `git push`
+- **Push with Upstream**: `git push --set-upstream origin main`
+- **Force Push with Upstream**: `sudo git push --set-upstream origin main`
+
+## Pulling and Rebasing
+- **Pull with Rebase**: `git pull origin main --rebase`
+- **Continue Rebase**: `git rebase --continue`
+
+## Checking Status
+- **Check Git Status**: `git status`
+
+## View and Edit File Contents
+- **View File Content**: `cat README.md`
+
+- 
