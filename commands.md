@@ -67,7 +67,7 @@
 - **Commit Changes with Message**: `git commit -m "your message"`
 
 ## Remote Repository Management
-- **Set Remote URL**: `git remote set-url origin <your_new_url>`
+- **Set Remote URL**: `git remote set-url origin origin https://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@github.com/Safiakhatoon767/git_for_devops.git
 - **View Remote URLs**: `git remote -v`
 - **Remove Remote**: `git remote remove origin`
 - **Add New Remote**: `git remote add origin <repository_url>`
