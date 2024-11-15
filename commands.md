@@ -146,4 +146,56 @@
 - **View Compact Commit Log**: `git log --oneline`
 - **Check Git Status**: `git status`
 
+### **git revert**
+
+- **Create a New Directory**  
+  ```bash
+  mkdir merigithub
+  cd merigithub/
+  mkdir git_prac
+  cd git_prac/
+  git init
+  ```
+
+- **Create and Check Branches**  
+  ```bash
+  git branch          # List all branches
+  git checkout -b dev # Create and switch to a new branch "dev"
+  git checkout -b stagining # Create and switch to "stagining" branch
+  git branch          # Verify all branches
+  ```
+
+- **Make Changes and Commit**  
+  ```bash
+  touch master1.txt
+  git add master1.txt
+  git commit -m "add this in master"
+  ```
+
+- **Working on Features**  
+  ```bash
+  vim feature-1.txt
+  git add feature-1.txt
+  git commit -m "add this file in dev"
+
+  vim feature-2.txt
+  git add feature-2.txt
+  git commit -m "add this file in dev"
+
+  vim feature-3.txt
+  git add feature-3.txt
+  git commit -m "add this file in dev"
+  ```
+
+- **View Commit Logs**  
+  ```bash
+  git log --oneline
+  ```
+
+- **Revert a Commit**  
+  ```bash
+  git revert <commit-hash>
+  ``` 
+
+
 
