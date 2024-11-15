@@ -87,4 +87,27 @@
 ## View and Edit File Contents
 - **View File Content**: `cat README.md`
 
-- 
+
+## Directory Navigation
+- **Navigate to .ssh Directory**: `cd .ssh`
+- **Go Back to Previous Directory**: `cd ..`
+- **Print Working Directory Path**: `pwd`
+
+## SSH Key Management
+- **Generate SSH Key**: `ssh-keygen`
+- **View SSH Public Key**: `cat id_ed25519.pub`
+
+## File Management
+- **Create or Edit File**: `vim safia.txt`
+
+## Staging and Committing Changes
+- **Add File to Staging**: `git add safia.txt`
+- **Commit with Message**: `git commit -m "add karo meri file haha"`
+
+## Remote Repository Management
+- **View Remote URLs**: `git remote -v`
+- **Set Remote URL to SSH**: `git remote set-url origin git@github.com:Safiakhatoon767/git_for_devops.git`
+
+## Checking Status
+- **Check Git Status**: `git status`
+
