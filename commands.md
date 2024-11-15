@@ -111,3 +111,39 @@
 ## Checking Status
 - **Check Git Status**: `git status`
 
+  
+
+# Git Commands - Branching Strategies
+
+## Basic Commands
+- **Clear Terminal Screen**: `clear`
+- **List Files and Directories**: `ls`
+
+## Directory Navigation
+- **Navigate to a Directory**: `cd github/`
+- **Navigate to Project Directory**: `cd git_for_devops/`
+
+## Branch Management
+- **List Branches**: `git branch`
+- **Create and Switch to New Branch (staging)**: `git checkout -b staging`
+- **Create and Switch to New Branch (dev)**: `git checkout -b dev`
+- **Switch to Existing Branch**: `git checkout <branch_name>`
+
+## File Management
+- **Create or Edit File**: `vim branching.md`
+
+## Staging and Committing Changes
+- **Add File to Staging**: `git add branching.md`
+- **Commit with Message**: `git commit -m "adding branching.md strategy by safia"`
+
+## Merging Branches
+- **Merge Branch into Current Branch**: `git merge <branch_name>`
+
+## Pushing Changes
+- **Push Branch to Remote Repository**: `git push origin staging`
+
+## Viewing Logs and Status
+- **View Compact Commit Log**: `git log --oneline`
+- **Check Git Status**: `git status`
+
+
