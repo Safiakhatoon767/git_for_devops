@@ -242,6 +242,163 @@
 - **Check Commit History After Rebase**  
   ```bash
   git log --oneline
-  ``` 
+  ```
+  ### **Cherry-Pick Commands and Explanation**
 
+#### **Steps Performed:**
+
+1. **Create New Files in `dev` Branch:**
+   - Created `imp.txt` and committed with the message: `important file`.
+   - Created `notomp.txt` and committed with the message: `not imp`.
+
+2. **Switch to `master` Branch:**
+   - Used `git checkout master` to move from `dev` to `master`.
+
+3. **Cherry-Pick Commit from `dev` to `master`:**
+   - Command: `git cherry-pick eedac82`
+     - This picks the commit `eedac82` (e.g., the commit for `important file`) from `dev` and applies it to `master`.
+
+#### **Resulting Commit Log in `master` After Cherry-Pick:**
+
+1. The `eedac82` commit (important file) is now part of `master`.
+2. Commits from `dev` not cherry-picked (e.g., `not imp`) remain in `dev` only.
+
+
+### **Stashing Commands and Explanation**
+
+#### **Steps Performed:**
+
+1. **Check Status of Changes:**
+   - `git status` to view modified files (`feature-3.txt` was modified).
+
+2. **Stash Changes Temporarily:**
+   - Command: `git stash`
+     - Temporarily saves changes in `feature-3.txt` without committing.
+
+3. **Modify and Commit Another File:**
+   - Edited and committed `feature-1.txt` with the message: `comple my work`.
+
+4. **Show Stash Details:**
+   - Command: `git stash show`
+     - Displays the files saved in the most recent stash.
+
+5. **Apply Stash and Remove it from Stash List:**
+   - Command: `git stash pop`
+     - Restores the stashed changes and removes the stash entry.
+
+6. **Complete Work on Restored File:**
+   - Edited `feature-3.txt` again.
+   - Staged and committed it with the message: `stash file work done`.
+
+#### **Result:**
+- Changes in `feature-3.txt` were stashed, restored, and committed after completing other work.
+
+  ### Command List: Squash Merge and Related Actions
+
+- **List all branches**:  
+  ```bash
+  git branch
+  ```
+
+- **Rebase master from origin**:  
+  ```bash
+  git pull origin master --rebase
+  ```
+
+- **View commit history (short format)**:  
+  ```bash
+  git log --oneline
+  ```
+
+- **Switch to `dev` branch**:  
+  ```bash
+  git checkout dev
+  ```
+
+- **Switch to `master` branch**:  
+  ```bash
+  git checkout master
+  ```
+
+- **Perform a squash merge from `dev` branch**:  
+  ```bash
+  git merge --squash dev
+  ```
+
+- **Check status after squash merge**:  
+  ```bash
+  git status
+  ```
+
+- **Stage a file (`notomp.txt`)**:  
+  ```bash
+  git add notomp.txt
+  ```
+
+- **Commit the squash merge**:  
+  ```bash
+  git commit -m "Squash merge from dev branch"
+  ```
+### Commands for Resolving Merge Conflicts
+
+- **List all branches**:  
+  ```bash
+  git branch
+  ```
+
+- **Modify file (`feature-1.txt`)**:  
+  ```bash
+  vim feature-1.txt
+  ```
+
+- **Stage changes**:  
+  ```bash
+  git add feature-1.txt
+  ```
+
+- **Commit the staged changes**:  
+  ```bash
+  git commit -m "add feature1 changes"
+  ```
+
+- **Switch to `dev` branch**:  
+  ```bash
+  git checkout dev
+  ```
+
+- **Make changes in `dev` branch (`feature-1.txt`)**:  
+  ```bash
+  vim feature-1.txt
+  git add feature-1.txt
+  git commit -m "this is my dev feature1 changes"
+  ```
+
+- **Switch back to `master` branch**:  
+  ```bash
+  git checkout master
+  ```
+
+- **Merge `dev` branch into `master`**:  
+  ```bash
+  git merge dev
+  ```
+
+- **Resolve merge conflict in `feature-1.txt`**:  
+  Edit the file (`vim feature-1.txt`) to fix conflicts manually.
+
+- **Check file status**:  
+  ```bash
+  git status
+  ```
+
+- **Stage the resolved file**:  
+  ```bash
+  git add feature-1.txt
+  ```
+
+- **Commit the resolved changes**:  
+  ```bash
+  git commit -m "solve merge conflict error"
+  ```
+  
 
