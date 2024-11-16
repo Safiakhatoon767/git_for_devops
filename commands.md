@@ -197,5 +197,51 @@
   git revert <commit-hash>
   ``` 
 
+### **Rebase Workflow Commands**
+
+#### **Rebasing Between Branches**
+
+- **Switch to the Development Branch**  
+  ```bash
+  git checkout dev
+  ```
+
+- **Add and Commit Changes in `dev` Branch**  
+  ```bash
+  vim file8.txt
+  git add file8.txt
+  git commit -m "add file8.txt"
+
+  vim file6.txt
+  git add file6.txt
+  git commit -m "add file6.txt"
+  ```
+
+- **View Commit History**  
+  ```bash
+  git log --oneline
+  ```
+
+- **Switch Back to the Master Branch**  
+  ```bash
+  git checkout master
+  ```
+
+- **Add and Commit Changes in `master` Branch**  
+  ```bash
+  vim file3.txt
+  git add file3.txt
+  git commit -m "add file3.txt"
+  ```
+
+- **Rebase `dev` Branch into `master`**  
+  ```bash
+  git rebase dev
+  ```
+
+- **Check Commit History After Rebase**  
+  ```bash
+  git log --oneline
+  ``` 
 
 
