@@ -106,6 +106,7 @@
 
 ## Remote Repository Management
 - **View Remote URLs**: `git remote -v`
+- git remote add origin git@github.com:Safiakhatoon767/birthday.git
 - **Set Remote URL to SSH**: `git remote set-url origin git@github.com:Safiakhatoon767/git_for_devops.git`
 
 ## Checking Status
